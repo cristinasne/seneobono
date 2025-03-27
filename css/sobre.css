@@ -1,0 +1,233 @@
+/* General Styles */
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  #2ec8a6; /* Verde relacionado con la medicina */
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.features-list li i {
+    color: #2ec8a6; /* Color verde para el ícono */
+    margin-right: 10px;
+    font-size: 1.8rem; /* Tamaño del ícono */
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ec8a6;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-btn:hover {
+    background-color: #2ec8a6;
+    transform: scale(1.05);
+}
+
+.image-container {
+    text-align: right; /* Alinea la imagen a la derecha */
+}
+
+
+.about-image {
+    width: 300px; /* Tamaño más grande */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+.about-image:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* General Styles */
+footer {
+    background-color:  #2c3e50;
+    padding: 40px 20px;
+    margin-top: 40px; /* Espacio para separar el footer del contenido */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem; /* Tamaño más grande para los títulos */
+    margin-bottom: 15px;
+    color:  #2ec8a6; /* Verde para los títulos */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1.2rem; /* Tamaño más grande para el texto */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #2ec8a6; /* Verde para los enlaces */
+    font-weight: bold;
+    font-size: 1.2rem; /* Tamaño más grande para los enlaces */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.8rem; /* Tamaño más grande para los íconos */
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+}
+
+.whatsapp-icon {
+    color:  #2ec8a6; /* Verde de WhatsApp */
+}
+
+.instagram-icon {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook-icon {
+    color: #1877f2; /* Azul de Facebook */
+}
+
+.twitter-icon {
+    color: #1da1f2; /* Azul celeste de Twitter */
+}
+
+/* Tabla de horario */
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem; /* Tamaño más grande para el texto */
+}
+
+.hours table td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+}

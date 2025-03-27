@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 245, 239);
+}
+.sidebar {
+    height: 100vh;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2ec8a6; /* Verde hospitalario */
+    transition: width 0.3s;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+.sidebar:hover {
+    width: 250px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    background-color: #f4ab01; 
+}
+.sidebar i {
+    font-size: 24px;
+}
+.sidebar .text {
+    display: none;
+    margin-left: 10px;
+}
+.sidebar:hover .text {
+    display: inline;
+}
+.content {
+    margin-left: 80px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+.sidebar:hover ~ .content {
+    margin-left: 250px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+.header .search-bar {
+    width: 200px;
+    margin-left: 20px;
+}
+.header .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #007bff;
+}
+.header .icons i {
+    font-size: 24px;
+    margin-left: 30px; /* Separación entre iconos */
+    cursor: pointer;
+    position: relative;
+    color: #007bff; /* Color de los iconos */
+}
+.header .icons .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.module {
+    display: none;
+}
+.module.active {
+    display: block;
+}
+.logo {
+    border-radius: 50%;
+    height: 40px;
+}
+.logo-text {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.card-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px;
+}
+/* .card-box .card {
+    height: 100px;
+    
+    width: 200px;
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    
+} */
+
+.card-box .card{
+    height: 100px;
+    width: 200px;
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card-box .card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+gap: 30px;
+margin-bottom: 40px; /* Espacio adicional debajo de las cajas */
+}
+.card-box .card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.card-box .card.bg-primary {
+    background-color: #007bff;
+}
+.card-box .card.bg-success {
+    background-color: #28a745;
+}
+.card-box .card.bg-info {
+    background-color: #17a2b8;
+}
+.card-box .card.bg-warning {
+    background-color: #ffc107;
+}
+.card-box .card.bg-danger {
+    background-color: #dc3545;
+}
+
+.table-container {
+    padding: 20px;
+    margin-top: 40px;
+    display:flex;
+}
+.table thead th {
+    background-color: #007bff;
+    color: white;
+}
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.table .btn {
+    margin-right: 5px;
+}
+
+
+   
